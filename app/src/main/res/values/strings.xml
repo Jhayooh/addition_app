@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Addition Table</string>
     <string name="timer">2:01</string>
+    <string name="play">Play</string>
+
+
+    <string-array name="difficulty">
+        <item>3x3</item>
+        <item>4x4</item>
+    </string-array>
 </resources>
