@@ -15,9 +15,7 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    Button playBtn;
-
-
+    static final String extra_message = "com.example.android.additiontable.extra.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +46,9 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void launchMainActivity(View view){
         Intent intent = new Intent(this, MainActivity.class);
+        Spinner spin = findViewById(R.id.time);
+        String string = spin.getSelectedItem().toString();
+        intent.putExtra(extra_message, string);
         startActivity(intent);
     }
 

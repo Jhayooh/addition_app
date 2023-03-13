@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Addition Table</string>
-    <string name="timer">2:01</string>
+    <string name="timer">00:00</string>
     <string name="play">Play</string>
     <string name="tiles">Number of tiles</string>
     <string name="username">Player\'s name</string>
@@ -10,6 +10,8 @@
     <string name="welcome1">Welcome to</string>
     <string name="welcome2"><b>Addition Table</b></string>
     <string name="select_tiles">Select tiles:</string>
+    <string name="history">History</string>
+    <string name="restart_message">The game is restarted.</string>
 
 
     <string-array name="timer">
