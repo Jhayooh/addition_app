@@ -2,6 +2,8 @@
     <string name="app_name">Addition Table</string>
     <string name="timer">2:01</string>
     <string name="play">Play</string>
+    <string name="tiles">Number of tiles</string>
+    <string name="username">Username:</string>
 
 
     <string-array name="difficulty">
