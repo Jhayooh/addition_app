@@ -93,7 +93,8 @@
                 android:text=""
                 android:autoSizeTextType="uniform"
                 android:textColor="@color/white"
-                android:background="@drawable/shape_2" />
+                android:background="@drawable/shape_2"
+                android:onClick="increment4"/>
 
             <TextView
                 android:id="@+id/box3_1"
@@ -105,7 +106,8 @@
                 android:gravity="center"
                 android:text=""
                 android:autoSizeTextType="uniform"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="increment7"/>
 
             <TextView
                 android:id="@+id/box4_1"
@@ -136,7 +138,8 @@
                 android:background="@drawable/shape_5"
                 android:gravity="center"
                 android:text=""
-                android:autoSizeTextType="uniform"/>
+                android:autoSizeTextType="uniform"
+                android:onClick="increment2"/>
 
             <TextView
                 android:id="@+id/box2_2"
@@ -147,7 +150,8 @@
                 android:background="@drawable/shape_4"
                 android:gravity="center"
                 android:text=""
-                android:autoSizeTextType="uniform" />
+                android:autoSizeTextType="uniform"
+                android:onClick="increment5"/>
 
             <TextView
                 android:id="@+id/box3_2"
@@ -158,7 +162,8 @@
                 android:background="@drawable/shape_1"
                 android:gravity="center"
                 android:text=""
-                android:autoSizeTextType="uniform"  />
+                android:autoSizeTextType="uniform"
+                android:onClick="increment8"/>
 
             <TextView
                 android:id="@+id/box4_2"
@@ -188,7 +193,8 @@
                 android:background="@drawable/shape_6"
                 android:gravity="center"
                 android:text=""
-                android:autoSizeTextType="uniform" />
+                android:autoSizeTextType="uniform"
+                android:onClick="increment3"/>
 
             <TextView
                 android:id="@+id/box2_3"
@@ -199,7 +205,8 @@
                 android:background="@drawable/shape_5"
                 android:gravity="center"
                 android:text=""
-                android:autoSizeTextType="uniform" />
+                android:autoSizeTextType="uniform"
+                android:onClick="increment6"/>
 
             <TextView
                 android:id="@+id/box3_3"
@@ -210,7 +217,8 @@
                 android:background="@drawable/shape_2"
                 android:gravity="center"
                 android:text=""
-                android:autoSizeTextType="uniform" />
+                android:autoSizeTextType="uniform"
+                android:onClick="increment9"/>
 
             <TextView
                 android:id="@+id/box4_3"
