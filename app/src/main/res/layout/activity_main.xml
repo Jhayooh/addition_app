@@ -8,75 +8,120 @@
     android:background="@color/main_black"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/timer"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer"
+            android:textColor="@color/white"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_menu_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <LinearLayout
         android:id="@+id/boxes"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        app:layout_constraintHeight="match_constraint"
+        app:layout_constraintBottom_toTopOf="@id/submit_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/timer">
+        app:layout_constraintTop_toBottomOf="@+id/head">
 
         <LinearLayout
             android:id="@+id/row1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1">
+            android:layout_weight="2">
 
             <TextView
                 android:id="@+id/box1_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_1"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/box2_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_2" />
 
             <TextView
                 android:id="@+id/box3_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_3"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/box4_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:gravity="center"
+                android:text="12"
+                android:autoSizeTextType="none"
+                android:textColor="@color/gray_namin"/>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/row2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/row1">
@@ -86,39 +131,49 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_5"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform"/>
 
             <TextView
                 android:id="@+id/box2_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_4"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform" />
 
             <TextView
                 android:id="@+id/box3_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_1"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform"  />
 
             <TextView
                 android:id="@+id/box4_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:text="45"
+                android:gravity="center"
+                android:textColor="@color/gray_namin" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/row3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/row2">
@@ -128,32 +183,42 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_6"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform" />
 
             <TextView
                 android:id="@+id/box2_3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_5"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform" />
 
             <TextView
                 android:id="@+id/box3_3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="2"
+                android:background="@drawable/shape_2"
+                android:gravity="center"
+                android:text=""
+                android:autoSizeTextType="uniform" />
 
             <TextView
                 android:id="@+id/box4_3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:text="45"
+                android:gravity="center"
+                android:textColor="@color/gray_namin" />
         </LinearLayout>
 
         <LinearLayout
@@ -169,44 +234,55 @@
                 android:id="@+id/box1_4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:text="45"
+                android:gravity="center"
+                android:textColor="@color/gray_namin" />
 
             <TextView
                 android:id="@+id/box2_4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:text="45"
+                android:gravity="center"
+                android:textColor="@color/gray_namin" />
 
             <TextView
                 android:id="@+id/box3_4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="45"
                 android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:gravity="center"
+                android:textColor="@color/gray_namin" />
 
             <TextView
                 android:id="@+id/box4_4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/shape" />
+                android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/submit_button"
         android:layout_width="180dp"
-        android:layout_height="76dp"
-        android:background="@drawable/shape"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Submit"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/main_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxes"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
