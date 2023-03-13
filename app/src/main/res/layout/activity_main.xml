@@ -22,87 +22,181 @@
         android:layout_marginTop="20dp"/>
 
     <LinearLayout
-        android:id="@+id/row1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/timer" >
+        app:layout_constraintTop_toBottomOf="@id/timer">
 
-        <TextView
-            android:id="@+id/box1_1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/shape"
-            android:layout_margin="8dp"/>
+            android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/box2_1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
+            <TextView
+                android:id="@+id/box1_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box2_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box3_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box4_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_weight="1"
-            android:layout_margin="8dp"
-            android:background="@drawable/shape"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
 
-        <TextView
-            android:id="@+id/box3_1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
+            <TextView
+                android:id="@+id/box1_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box2_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box3_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box4_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_margin="8dp"
-            android:background="@drawable/shape"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row2">
 
-        <TextView
-            android:id="@+id/box4_1"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:background="@drawable/shape"
-            android:layout_margin="8dp"
-            android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/box1_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box2_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box3_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box4_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row3">
+
+            <TextView
+                android:id="@+id/box1_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box2_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box3_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:id="@+id/box4_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape" />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/row2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/row1" >
 
-        <TextView
-            android:id="@+id/box1_2"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="@drawable/shape"
-            android:layout_margin="8dp"/>
-
-        <TextView
-            android:id="@+id/box2_2"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:layout_margin="8dp"
-            android:background="@drawable/shape"/>
-
-        <TextView
-            android:id="@+id/box3_2"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:layout_margin="8dp"
-            android:background="@drawable/shape"/>
-
-        <TextView
-            android:id="@+id/box4_2"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:background="@drawable/shape"
-            android:layout_margin="8dp"
-            android:layout_weight="1"/>
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
