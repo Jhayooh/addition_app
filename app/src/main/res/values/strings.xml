@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Addition Table</string>
+    <string name="timer">2:01</string>
 </resources>
