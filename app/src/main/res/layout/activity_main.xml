@@ -78,9 +78,10 @@
                 android:layout_weight="2"
                 android:background="@drawable/shape_1"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/initial_value"
                 android:autoSizeTextType="uniform"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:onClick="increment"/>
 
             <TextView
                 android:id="@+id/box2_1"
