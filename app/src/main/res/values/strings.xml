@@ -3,12 +3,20 @@
     <string name="timer">2:01</string>
     <string name="play">Play</string>
     <string name="tiles">Number of tiles</string>
-    <string name="username">Username:</string>
+    <string name="username">Player\'s name</string>
+    <string name="enter_your_name_here">Enter your name here</string>
+    <string name="select_timer">Select time (minutes):</string>
     <string name="initial_value"></string>
+    <string name="welcome1">Welcome to</string>
+    <string name="welcome2"><b>Addition Table</b></string>
+    <string name="select_tiles">Select tiles:</string>
 
 
-    <string-array name="difficulty">
-        <item>3x3</item>
-        <item>4x4</item>
+    <string-array name="timer">
+        <item>2:00</item>
+        <item>3:00</item>
+        <item>4:00</item>
+        <item>5:00</item>
+        <item>6:00</item>
     </string-array>
 </resources>
