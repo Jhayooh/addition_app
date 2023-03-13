@@ -15,25 +15,21 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    Button playBtn;
-
-
+    static final String extra_message = "com.example.android.additiontable.extra.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Spinner spinner = findViewById(R.id.difficulty_selector);
+        Spinner spinner = findViewById(R.id.time);
         if (spinner != null){
             spinner.setOnItemSelectedListener(this);
 
-            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.difficulty, android.R.layout.simple_spinner_item);
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.timer, android.R.layout.simple_spinner_item);
 
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-            if (spinner != null){
-                spinner.setAdapter(adapter);
-            }
+            spinner.setAdapter(adapter);
         }
     }
 
@@ -50,6 +46,9 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void launchMainActivity(View view){
         Intent intent = new Intent(this, MainActivity.class);
+        Spinner spin = findViewById(R.id.time);
+        String string = spin.getSelectedItem().toString();
+        intent.putExtra(extra_message, string);
         startActivity(intent);
     }
 

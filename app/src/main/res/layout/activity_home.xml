@@ -7,63 +7,150 @@
     android:background="#2E3034"
     tools:context=".HomeActivity">
 
-    <Spinner
-        android:id="@+id/difficulty_selector"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/welcome1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="#FDFCFC"
+        android:text="@string/welcome1"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/welcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome2"
+        android:textSize="42sp"
+        android:textColor="@color/main_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/welcome1" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:textSize="18sp"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome2" />
+
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_label"
+        android:background="@drawable/shape_edittext"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/enter_your_name_here"/>
+
+    <TextView
+        android:id="@+id/select_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="58dp"
+        android:text="@string/select_timer"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit" />
+
+    <Spinner
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/select_label"
+        app:layout_constraintStart_toEndOf="@id/select_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape"/>
+
+    <TextView
+        android:id="@+id/tiles_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/select_tiles"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="58dp"
+        app:layout_constraintTop_toBottomOf="@+id/select_label"
+        app:layout_constraintEnd_toStartOf="@id/radioGroup"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth="match_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintStart_toEndOf="@+id/tiles_label"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/tile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:text="3x3 tiles"
+            android:buttonTint="@color/main_gold"/>
+
+        <RadioButton
+            android:id="@+id/tile4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="4x4 tiles"
+            android:buttonTint="@color/main_gold"/>
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/play_button"
-        android:layout_width="wrap_content"
+        android:layout_width="172dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:background="#FF8F00"
+        android:background="@drawable/shape_main"
         android:backgroundTint="#FF8F00"
+        android:layout_marginTop="68dp"
         android:onClick="launchMainActivity"
         android:text="@string/play"
-        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textColor="@color/main_black"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/difficulty_selector" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
-        android:id="@+id/tiles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="@string/tiles"
-        android:textColor="#FFFEFE"
-        app:layout_constraintBottom_toTopOf="@+id/difficulty_selector"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/username"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/difficulty_selector" />
-
-    <EditText
-        android:id="@+id/editUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Enter your username"
-        android:inputType="textPersonName"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
+        app:layout_constraintTop_toBottomOf="@id/play_button"
+        android:layout_marginTop="18dp"
+        android:text="@string/history"
+        android:textSize="16sp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
