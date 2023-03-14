@@ -97,6 +97,7 @@
                 android:text=""
                 android:textColor="@color/white" />
 
+
             <TextView
                 android:id="@+id/box3_1"
                 android:layout_width="0dp"
@@ -109,6 +110,7 @@
                 android:onClick="incrementNum"
                 android:text=""
                 android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/box4_1"
@@ -143,6 +145,7 @@
                 android:text=""
                 android:textColor="@color/white" />
 
+
             <TextView
                 android:id="@+id/box2_2"
                 android:layout_width="0dp"
@@ -154,7 +157,7 @@
                 android:gravity="center"
                 android:onClick="incrementNum"
                 android:text=""
-                android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/box3_2"
@@ -167,7 +170,7 @@
                 android:gravity="center"
                 android:onClick="incrementNum"
                 android:text=""
-                android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/box4_2"
@@ -199,7 +202,7 @@
                 android:gravity="center"
                 android:onClick="incrementNum"
                 android:text=""
-                android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/box2_3"
@@ -212,7 +215,7 @@
                 android:gravity="center"
                 android:onClick="incrementNum"
                 android:text=""
-                android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/box3_3"
@@ -225,7 +228,7 @@
                 android:gravity="center"
                 android:onClick="incrementNum"
                 android:text=""
-                android:textColor="@color/white" />
+
 
             <TextView
                 android:id="@+id/box4_3"
