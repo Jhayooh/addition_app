@@ -14,15 +14,12 @@ public class MainActivity extends AppCompatActivity {
 
     private int mIncrement = 0;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView txt = findViewById(R.id.timer);
-        String time = getIntent().getStringExtra(HomeActivity.extra_message);
-        if (time != null) {
-            txt.setText(time);
-        }
+
     }
 
     public void incrementNum (View view) {
