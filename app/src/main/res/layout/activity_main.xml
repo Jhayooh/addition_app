@@ -156,7 +156,7 @@
                 android:background="@drawable/shape_4"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""
+                android:text=""/>
 
 
             <TextView
@@ -169,7 +169,7 @@
                 android:background="@drawable/shape_1"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""
+                android:text=""/>
 
 
             <TextView
@@ -201,7 +201,7 @@
                 android:background="@drawable/shape_6"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""
+                android:text=""/>
 
 
             <TextView
@@ -214,7 +214,7 @@
                 android:background="@drawable/shape_5"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""
+                android:text=""/>
 
 
             <TextView
@@ -227,7 +227,7 @@
                 android:background="@drawable/shape_2"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""
+                android:text=""/>
 
 
             <TextView
