@@ -4,6 +4,7 @@
     <string name="play">Play</string>
     <string name="tiles">Number of tiles</string>
     <string name="username">Player\'s name</string>
+    <string name="usernameSum">Player\'s name:</string>
     <string name="enter_your_name_here">Enter your name here</string>
     <string name="select_timer">Select time (minutes):</string>
     <string name="initial_value"></string>
@@ -12,6 +13,7 @@
     <string name="select_tiles">Select tiles:</string>
     <string name="history">History</string>
     <string name="restart_message">The game is restarted.</string>
+    <string name="game_summary">Game Summary</string>
 
 
     <string-array name="timer">
