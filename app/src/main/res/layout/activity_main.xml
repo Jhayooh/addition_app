@@ -307,8 +307,7 @@
             android:textColor="@color/main_black"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:onClick="launchSummary"/>
+            android:layout_marginEnd="10dp"/>
 
         <ImageView
             android:layout_width="0dp"
