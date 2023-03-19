@@ -15,7 +15,6 @@ public class Summary extends AppCompatActivity {
     }
 
     public void launchMainActivity(View view){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }

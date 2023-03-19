@@ -156,7 +156,8 @@
                 android:background="@drawable/shape_4"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""/>
+                android:text=""
+                android:textColor="@color/white"/>
 
 
             <TextView
@@ -169,7 +170,8 @@
                 android:background="@drawable/shape_1"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""/>
+                android:text=""
+                android:textColor="@color/white"/>
 
 
             <TextView
@@ -201,7 +203,8 @@
                 android:background="@drawable/shape_6"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""/>
+                android:text=""
+                android:textColor="@color/white"/>
 
 
             <TextView
@@ -214,7 +217,8 @@
                 android:background="@drawable/shape_5"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""/>
+                android:text=""
+                android:textColor="@color/white"/>
 
 
             <TextView
@@ -227,8 +231,8 @@
                 android:background="@drawable/shape_2"
                 android:gravity="center"
                 android:onClick="incrementNum"
-                android:text=""/>
-
+                android:text=""
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/box4_3"
