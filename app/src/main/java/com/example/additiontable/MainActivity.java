@@ -51,4 +51,9 @@ public class MainActivity extends AppCompatActivity {
         recreate();
     }
 
+    public void launchSummary (View view){
+        Intent intent = new Intent(this, Summary.class);
+        startActivity(intent);
+    }
+
 }
