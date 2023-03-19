@@ -1,18 +1,19 @@
 package com.example.additiontable;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    private int mIncrement = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +26,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void incrementNum (View view) {
+        Log.d(TAG, "working1");
         TextView textView = (TextView) findViewById(view.getId());
-        mIncrement++;
-        if(mIncrement > 9) {
-            mIncrement=0;
+        String viewText = textView.getText().toString();
+        if (viewText.equals("")){
+            Log.d(TAG, "working2");
+            textView.setText("0");
+        } else {
+            Log.d(TAG, "working3");
+            int viewNum = Integer.parseInt(viewText)+1;
+            if (viewNum > 9) {
+                viewNum = 0;
+            }
+            textView.setText(Integer.toString(viewNum));
         }
-        if (textView != null) {
-            textView.setText(Integer.toString(mIncrement));
-        }
+//        if (mIncrement > 9) {
+//            mIncrement = 0;
+//        }
+//        if (textView != null) {
+//            textView.setText(Integer.toString(mIncrement));
+//        }
     }
 //    @SuppressLint("SetTextI18n")
 //    public void increment (View view){
