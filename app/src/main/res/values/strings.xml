@@ -12,6 +12,10 @@
     <string name="select_tiles">Select tiles:</string>
     <string name="history">History</string>
     <string name="restart_message">The game is restarted.</string>
+    <string name="tilex4">4x4 tiles</string>
+    <string name="tilex3">3x3 tiles</string>
+    <string name="text_history">History</string>
+    <string name="_number">#</string>
 
 
     <string-array name="timer">

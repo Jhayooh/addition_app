@@ -54,7 +54,7 @@
         android:background="@drawable/shape_edittext"
         android:inputType="textPersonName"
         android:gravity="center_vertical"
-        android:padding="8dp"
+        android:padding="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -115,7 +115,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:checked="true"
-            android:text="3x3 tiles"
+            android:textSize="18sp"
+            android:text="@string/tilex3"
             android:buttonTint="@color/main_gold"/>
 
         <RadioButton
@@ -123,7 +124,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="4x4 tiles"
+            android:textSize="18sp"
+            android:text="@string/tilex4"
             android:buttonTint="@color/main_gold"/>
 
     </RadioGroup>
@@ -154,6 +156,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="32dp"
+        android:onClick="onClickHistory"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
