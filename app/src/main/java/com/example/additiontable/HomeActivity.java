@@ -51,6 +51,8 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         intent.putExtra(extra_message, string);
         startActivity(intent);
     }
-
+    public void onClickHistory(View view) {
+        startActivity(new Intent(this, HistoryActivity.class)); finish();
+    }
 
 }

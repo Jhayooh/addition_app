@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void backButton(View view) {
+        startActivity(new Intent(this, HomeActivity.class));
         finish();
     }
 
