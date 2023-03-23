@@ -13,15 +13,29 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static final String s_timer = "timer";
+    public static String m_timer;
+    public static final String s_tile = "tile";
+    public static String m_tile;
+    public static final String s_pName = "name";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        String string = getIntent().getStringExtra(HomeActivity.extra_message);
+        m_tile = getIntent().getStringExtra(s_tile);
+        if (Objects.equals(m_tile, getString(R.string.tilex3))) {
+            setContentView(R.layout.activity_main);
+        } else if (Objects.equals(m_tile, getString(R.string.tilex4))) {
+            setContentView(R.layout.activity_main4x4);
+        }
+
+        m_timer = getIntent().getStringExtra(s_timer);
         TextView textView = findViewById(R.id.timer);
-        textView.setText(string);
+        textView.setText(m_timer);
 
     }
 
@@ -67,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchSummary (View view){
         Intent intent = new Intent(this, Summary.class);
+        intent.putExtra(Summary.sum_pName, getIntent().getStringExtra(s_pName));
+        intent.putExtra(Summary.sum_tile, getIntent().getStringExtra(s_tile));
+        intent.putExtra(Summary.sum_time, m_timer);
         startActivity(intent);
     }
 
