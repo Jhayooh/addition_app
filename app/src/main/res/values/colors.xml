@@ -10,4 +10,5 @@
     <color name="main_black">#2e3034</color>
     <color name="gray_namin">#857f72</color>
     <color name="main_gold">#FF8F00</color>
+    <color name="trans_gold">#59FF8F00</color>
 </resources>
