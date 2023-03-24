@@ -166,7 +166,8 @@
                 android:id="@+id/item3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item3_no"
                     android:layout_width="50dp"
@@ -196,7 +197,8 @@
                 android:id="@+id/item4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item4_no"
                     android:layout_width="50dp"
@@ -228,7 +230,8 @@
                 android:id="@+id/item5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item5_no"
                     android:layout_width="50dp"
@@ -258,7 +261,8 @@
                 android:id="@+id/item6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item6_no"
                     android:layout_width="50dp"
@@ -290,7 +294,8 @@
                 android:id="@+id/item7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item7_no"
                     android:layout_width="50dp"
@@ -320,7 +325,8 @@
                 android:id="@+id/item8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item8_no"
                     android:layout_width="50dp"
@@ -352,7 +358,8 @@
                 android:id="@+id/item9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item9_no"
                     android:layout_width="50dp"
@@ -382,7 +389,8 @@
                 android:id="@+id/item10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item10_no"
                     android:layout_width="50dp"
@@ -414,7 +422,8 @@
                 android:id="@+id/item11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item11_no"
                     android:layout_width="50dp"
@@ -444,7 +453,8 @@
                 android:id="@+id/item12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item12_no"
                     android:layout_width="50dp"
@@ -476,7 +486,8 @@
                 android:id="@+id/item13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item13_no"
                     android:layout_width="50dp"
@@ -506,7 +517,8 @@
                 android:id="@+id/item14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item14_no"
                     android:layout_width="50dp"
@@ -538,7 +550,8 @@
                 android:id="@+id/item15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="launchSummary">
                 <TextView
                     android:id="@+id/item15_no"
                     android:layout_width="50dp"
