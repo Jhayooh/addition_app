@@ -46,6 +46,13 @@ public class Summary extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    public void launchHomeActivity(View view){
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra(MainActivity.s_timer, getIntent().getStringExtra(sum_time));
+        intent.putExtra(MainActivity.s_tile, getIntent().getStringExtra(sum_tile));
+        startActivity(intent);
+        finish();
+    }
 
     public void backButtonSum(View view) {
         startActivity(new Intent(Summary.this, HistoryActivity.class)); finish();
