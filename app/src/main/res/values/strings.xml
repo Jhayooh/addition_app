@@ -11,7 +11,7 @@
     <string name="welcome2"><b>Addition Table</b></string>
     <string name="select_tiles">Select tiles:</string>
     <string name="history">History</string>
-    <string name="restart_message">The game is restarted.</string>
+    <string name="restart_message">Tile Resets</string>
     <string name="tilex4">4x4 tiles</string>
     <string name="tilex3">3x3 tiles</string>
     <string name="text_history">History</string>
@@ -24,6 +24,6 @@
         <item>3:00</item>
         <item>4:00</item>
         <item>5:00</item>
-        <item>6:00</item>
+        <item>Open timer</item>
     </string-array>
 </resources>

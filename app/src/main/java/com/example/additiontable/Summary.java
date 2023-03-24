@@ -43,6 +43,7 @@ public class Summary extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra(MainActivity.s_timer, getIntent().getStringExtra(sum_time));
         intent.putExtra(MainActivity.s_tile, getIntent().getStringExtra(sum_tile));
+        intent.putExtra(MainActivity.s_pName, getIntent().getStringExtra(sum_pName));
         startActivity(intent);
         finish();
     }

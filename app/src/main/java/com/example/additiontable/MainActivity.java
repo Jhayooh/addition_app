@@ -35,19 +35,17 @@ public class MainActivity extends AppCompatActivity {
 
         m_timer = getIntent().getStringExtra(s_timer);
         TextView textView = findViewById(R.id.timer);
+        if (m_timer.equals(R.string.timer))
         textView.setText(m_timer);
 
     }
 
     public void incrementNum (View view) {
-        Log.d(TAG, "working1");
         TextView textView = (TextView) findViewById(view.getId());
         String viewText = textView.getText().toString();
         if (viewText.equals("")){
-            Log.d(TAG, "working2");
             textView.setText("0");
         } else {
-            Log.d(TAG, "working3");
             int viewNum = Integer.parseInt(viewText)+1;
             if (viewNum > 9) {
                 viewNum = 0;
